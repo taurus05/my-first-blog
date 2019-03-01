@@ -2,10 +2,6 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
-<<<<<<< HEAD
-=======
-
->>>>>>> ccd12f6b08f10fc997498155c75ca51c7a44a5f8
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
